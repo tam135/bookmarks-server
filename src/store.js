@@ -1,5 +1,5 @@
 const uuid = require('uuid/v4')
-const booksmarks = [
+const bookmarks = [
     {
         id: uuid(),
         title: 'Youtube',
