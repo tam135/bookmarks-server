@@ -13,6 +13,7 @@ const app = express()
 app.use(morgan((NODE_ENV === 'production') ? 'tiny' : 'common', {
   skip: () => NODE_ENV === 'test'
 }))
+console.log(process.env.API_TOKEN)
 app.use(cors())
 app.use(helmet())
 app.use(validateBearerToken)
